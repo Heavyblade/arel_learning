@@ -13,6 +13,9 @@ GEM
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     minitest (5.14.4)
+    rexml (3.2.5)
+    ruby-graphviz (1.2.5)
+      rexml
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     zeitwerk (2.4.2)
@@ -25,6 +28,7 @@ DEPENDENCIES
   activesupport
   arel
   byebug
+  ruby-graphviz
 
 BUNDLED WITH
    2.2.16
