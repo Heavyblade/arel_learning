@@ -15,4 +15,19 @@ ActiveRecord::Base.establish_connection(
   database: 'chinook'
 )
 
-puts Actor.first
+def actor_arel
+  Actor.arel_table
+end
+
+def film_actor_arel
+  FilmActor.arel_table
+end
+
+def film_arel
+  Film.arel_table
+end
+
+def execute
+  puts send("#{ARGV[0]}_ar").to_sql
+  puts send("#{ARGV[0]}_arel").to_sql
+end
